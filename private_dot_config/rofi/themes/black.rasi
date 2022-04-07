@@ -1,0 +1,57 @@
+configuration {
+    fixed-num-lines: 				true;
+    show-icons: 					true;
+    sidebar-mode: 					false;
+    scroll-method: 					1;
+    click-to-exit: 					true;
+    combi-hide-mode-prefix: 		false;
+    display-windowcd: 				"";
+    display-run: 					"";
+    display-ssh: 					"";
+    display-drun: 					"";
+    display-combi: 					"";
+}
+
+* {
+    background-color: transparent;
+    text-color: #fff;
+    font: "Inconsolata 14";
+}
+
+window {
+    background-color: #000;
+    border-radius: 3px;
+    width: 35%;
+    padding: 4px;
+    height: 30%;
+}
+
+entry {
+    padding: 8px;
+}
+
+listview {
+    scrollbar: false;
+}
+
+element-icon {
+    padding: 0 8px 0 0;
+    size: 24;
+    border: 0px;
+}
+
+element {
+    padding: 8px;
+}
+
+element selected {
+    background-color: #111;
+}
+
+prompt {
+    enabled: false;
+}
+
+message {
+    padding: 5px;
+}

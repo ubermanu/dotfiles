@@ -4,11 +4,13 @@ google-chrome
 i3-gaps
 i3-sensible-browser-git
 kitty
+papirus-icon-theme
 picom-ibhagwan-git
 polybar
 pulseaudio-control
 ranger
 rofi
+rofi-emoji
 rofi-greenclip
 rofi-power-menu
 ttc-iosevka
