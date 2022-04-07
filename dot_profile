@@ -1,7 +1,7 @@
+# set default screen layout
 ~/.screenlayout/default.sh
 
-
-# LS
+# ls
 alias ll="ls -Alh"
 alias l="ls -lh"
 
@@ -10,13 +10,12 @@ alias l="ls -lh"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
-#env
-export TODO_PATH="$HOME/Documents/todo"
-export VISUAL=nvim;
-export EDITOR=nvim;
+# env
+export VISUAL=vim
+export EDITOR=vim
 export SUDO_PROMPT="passwd: "
-export BROWSER=google-chrome-stable;
-#export TERMINAL=alacritty
+export BROWSER=google-chrome-stable
 export TERMINAL=kitty
 
-export TERM=ansi
+#export TERM=ansi
+export TERM=xterm-256color
