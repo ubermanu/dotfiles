@@ -13,3 +13,9 @@ My i3 config for Arch
 ## Install
 
 See https://www.chezmoi.io/
+
+## Dependencies
+
+Install https://github.com/Jguer/yay
+
+    yay -S $(cat dependencies.txt | tr '\n' ' ') 
