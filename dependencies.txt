@@ -21,4 +21,3 @@ ttf-inconsolata
 ttf-iosevka-nerd
 ttf-liberation
 ttf-nerd-fonts-symbols
-x11-emoji-picker-git
