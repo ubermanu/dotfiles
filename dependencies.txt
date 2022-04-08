@@ -1,4 +1,6 @@
 arandr
+d-tracker
+d-tracker-control
 feh
 google-chrome
 i3-gaps
