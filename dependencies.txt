@@ -4,6 +4,7 @@ google-chrome
 i3-gaps
 i3-sensible-browser-git
 kitty
+oh-my-zsh-git
 papirus-icon-theme
 picom-ibhagwan-git
 polybar
