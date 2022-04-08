@@ -1,12 +1,13 @@
 # dotfiles
 
-My i3 config for Arch
-
+- OS: Arch (btw)
 - WM: i3
 - Bar: Polybar
+- Shell: ZSH
 - Terminal: Kitty
 - File manager: Ranger
 - Launcher: Rofi
+- Notifications: Dunst
 - Editor: Vim
 - Browser: Google Chrome
 
