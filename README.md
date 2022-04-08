@@ -1,5 +1,7 @@
 # dotfiles
 
+![preview](preview.jpg)
+
 - OS: Arch (btw)
 - WM: i3
 - Bar: Polybar
