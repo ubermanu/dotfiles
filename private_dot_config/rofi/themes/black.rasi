@@ -1,6 +1,6 @@
 configuration {
     fixed-num-lines: 				true;
-    show-icons: 					true;
+    show-icons: 					false;
     sidebar-mode: 					false;
     scroll-method: 					1;
     click-to-exit: 					true;
@@ -23,15 +23,17 @@ window {
     border-radius: 3px;
     width: 35%;
     padding: 4px;
-    height: 30%;
 }
 
 entry {
     padding: 8px;
+     placeholder-color: #666666;
 }
 
 listview {
     scrollbar: false;
+    dynamic: true;
+    lines: 5;
 }
 
 element-icon {
