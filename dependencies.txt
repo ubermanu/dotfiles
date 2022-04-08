@@ -1,9 +1,11 @@
 arandr
 d-tracker
 d-tracker-control-git
+dunst
 feh
 google-chrome
 i3-gaps
+i3-gnome-pomodoro-git
 i3-sensible-browser-git
 kitty
 oh-my-zsh-git
