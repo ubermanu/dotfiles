@@ -1,11 +1,6 @@
 # set default screen layout
 ~/.screenlayout/default.sh
 
-# ls
-alias ll="ls -Alh"
-alias l="ls -lh"
-alias f="fzf"
-
 # path
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -16,6 +11,3 @@ export EDITOR=vim
 export SUDO_PROMPT="passwd: "
 export BROWSER=google-chrome-stable
 export TERMINAL=kitty
-
-#export TERM=ansi
-#export TERM=xterm-256color

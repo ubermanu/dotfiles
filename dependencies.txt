@@ -9,7 +9,6 @@ i3-gaps
 i3-gnome-pomodoro-git
 i3-sensible-browser-git
 kitty
-oh-my-zsh-git
 papirus-icon-theme
 picom-ibhagwan-git
 polybar
@@ -26,3 +25,4 @@ ttf-inconsolata
 ttf-iosevka-nerd
 ttf-liberation
 ttf-nerd-fonts-symbols
+zsh-theme-powerlevel10k-git
