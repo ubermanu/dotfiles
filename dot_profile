@@ -4,7 +4,7 @@
 # ls
 alias ll="ls -Alh"
 alias l="ls -lh"
-
+alias f="fzf"
 
 # path
 export PATH="$HOME/.local/bin:$PATH"
@@ -18,4 +18,4 @@ export BROWSER=google-chrome-stable
 export TERMINAL=kitty
 
 #export TERM=ansi
-export TERM=xterm-256color
+#export TERM=xterm-256color
