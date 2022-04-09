@@ -1,4 +1,3 @@
-oh-my-zsh-git
 arandr
 d-tracker
 d-tracker-control-git
