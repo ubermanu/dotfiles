@@ -1,6 +1,7 @@
 arandr
 d-tracker
 d-tracker-control-git
+dragon-drop
 dunst
 feh
 google-chrome
