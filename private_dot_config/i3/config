@@ -80,6 +80,9 @@ bindsym $mod+w exec i3-sensible-browser
 # kill focused window
 bindsym $mod+q kill
 
+# power menu
+bindsym $mod+Escape exec rofi -show power-menu -modi power-menu:rofi-power-menu
+
 # https://github.com/GaZaTu/x11-emoji-picker
 bindsym $mod+semicolon exec rofi -show emoji -modi emoji 
 
