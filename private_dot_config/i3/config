@@ -7,10 +7,10 @@
 
 exec --no-startup-id $HOME/.fehbg 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec --no-startup-id picom -b
+#exec --no-startup-id picom -b
 
 # i3 gaps
-gaps inner 10
+gaps inner 0
 gaps outer 0
 
 # 1px border
