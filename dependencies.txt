@@ -15,6 +15,7 @@ polybar
 pulseaudio-control
 ranger
 rofi
+rofi-calc
 rofi-emoji
 rofi-greenclip
 rofi-power-menu

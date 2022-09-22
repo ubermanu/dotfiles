@@ -83,8 +83,8 @@ bindsym $mod+q kill
 # power menu
 bindsym $mod+Escape exec rofi -show power-menu -modi power-menu:rofi-power-menu
 
-# https://github.com/GaZaTu/x11-emoji-picker
-bindsym $mod+semicolon exec rofi -show emoji -modi emoji 
+# https://github.com/Mange/rofi-emoji
+bindsym $mod+semicolon exec rofi -show emoji -modi emoji -emoji-format '{emoji} <span weight="bold">{name}</span>[ <span size="small">({keywords})</span>]' 
 
 # color picker
 bindsym $mod+p exec xcolor-pick
@@ -92,6 +92,9 @@ bindsym $mod+p exec xcolor-pick
 # clipboard tool
 exec --no-startup-id greenclip daemon>/dev/null
 bindsym $mod+c exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard
+
+# https://github.com/svenstaro/rofi-calc
+bindsym $mod+colon exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort -no-history -lines 0
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id dmenu_run
