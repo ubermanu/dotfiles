@@ -10,8 +10,8 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 #exec --no-startup-id picom -b
 
 # i3 gaps
-gaps inner 0
-gaps outer 0
+#gaps inner 0
+#gaps outer 0
 
 # 1px border
 for_window [class="^.*"] border pixel 1

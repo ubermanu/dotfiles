@@ -1,6 +1,7 @@
 # Aliases
 
-alias v="vim"
+#alias v="vim"
+alias v="nvim"
 
 alias g='git'
 alias ga='git add'

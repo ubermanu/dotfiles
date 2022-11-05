@@ -4,7 +4,6 @@
 # path
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="/usr/lib/dart/bin:$PATH"
 
 # env
 export VISUAL=vim
@@ -13,3 +12,6 @@ export SUDO_PROMPT="passwd: "
 export BROWSER=google-chrome-stable
 export TERMINAL=kitty
 export TERM=xterm
+
+export XCURSOR_THEME="Posy_Cursor"
+
