@@ -1,4 +1,6 @@
 arandr
+betterlockscreen
+dex
 d-tracker
 d-tracker-control-git
 dragon-drop
@@ -29,4 +31,5 @@ ttf-liberation
 ttf-nerd-fonts-symbols
 xdg-user-dirs
 xsel
+xss-lock
 zsh-theme-powerlevel10k-git
