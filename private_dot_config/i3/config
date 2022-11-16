@@ -6,9 +6,11 @@
 #
 
 exec --no-startup-id betterlockscreen -w dim
-exec --no-startup-id source $HOME/.fehbg 
+exec --no-startup-id $HOME/.fehbg 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 #exec --no-startup-id picom -b
+
+exec_always --no-startup-id numlockx on
 
 # i3 gaps
 #gaps inner 0

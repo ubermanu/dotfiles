@@ -11,6 +11,7 @@ i3-wm
 i3-sensible-browser-git
 kitty
 noto-fonts-emoji
+numlockx
 papirus-icon-theme
 picom-ibhagwan-git
 polybar
