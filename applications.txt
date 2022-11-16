@@ -1,0 +1,13 @@
+code
+discord
+epiphany
+firefox
+gimp
+gitg
+inkscape
+libreoffice-fresh
+nvim
+phpstorm
+xournalpp
+zathura
+zathura-pdf-mupdf
