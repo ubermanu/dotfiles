@@ -4,10 +4,13 @@ epiphany
 firefox
 gimp
 gitg
+google-chrome
 inkscape
 libreoffice-fresh
-nvim
+neovim
+nvim-packer-git
 phpstorm
+phpstorm-jre
 xournalpp
 zathura
 zathura-pdf-mupdf
