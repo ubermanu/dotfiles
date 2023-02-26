@@ -1,0 +1,4 @@
+alsa_output.pci-0000_01_00.1.hdmi-stereo-extra1:蓼 Speakers
+alsa_output.pci-0000_2b_00.1.hdmi-stereo:蓼 Speakers
+alsa_output.usb-Logitech_PRO_X_000000000000-00.analog-stereo: Logitech Pro X
+

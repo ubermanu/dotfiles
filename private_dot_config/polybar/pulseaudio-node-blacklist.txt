@@ -1,0 +1,2 @@
+alsa_output.usb-Logitech_Logitech_Wireless_Headset_000D443AFCA0-00.analog-stereo
+alsa_output.pci-0000_2d_00.4.iec958-stereo
