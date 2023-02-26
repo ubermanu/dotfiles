@@ -1,7 +1,7 @@
 code
 discord
 epiphany
-firefox
+firefox-developer-edition
 gimp
 gitg
 google-chrome
