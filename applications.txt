@@ -11,6 +11,7 @@ neovim
 nvim-packer-git
 phpstorm
 phpstorm-jre
+qmk
 xournalpp
 zathura
 zathura-pdf-mupdf

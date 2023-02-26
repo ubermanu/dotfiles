@@ -24,11 +24,6 @@ default_floating_border pixel 1
 # update focused border color
 client.focused #333333 #333333 #333333 #333333 #888888
 
-# Print screen
-bindsym Print exec screensht full
-bindsym Shift+Print exec screensht area
-
-
 # i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
@@ -90,19 +85,24 @@ bindsym $mod+Escape exec rofi -show power-menu -modi power-menu:rofi-power-menu
 # https://github.com/Mange/rofi-emoji
 bindsym $mod+semicolon exec rofi -show emoji -modi emoji -emoji-format '{emoji} <span weight="bold">{name}</span>[ <span size="small">({keywords})</span>]' 
 
+# Print screen
+#bindsym Print exec screensht full
+bindsym $mod+Shift+s exec screensht area
+
 # color picker
 #bindsym $mod+p exec xcolor-pick
 
 # copy paste with dvorak + mouse
-bindsym --release $mod+y exec --no-startup-id "xdotool key --clearmodifiers ctrl+c"
-bindsym --release $mod+p exec --no-startup-id "xdotool key --clearmodifiers ctrl+v"
+bindsym --release $mod+p exec --no-startup-id "xdotool-mod shift+Insert"
+bindsym --release $mod+y exec --no-startup-id "xdotool-mod ctrl+Insert"
+bindsym --release $mod+x exec --no-startup-id "xdotool-mod shift+Delete"
 
 # clipboard tool
 exec --no-startup-id greenclip daemon>/dev/null
 bindsym $mod+c exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard
 
 # https://github.com/svenstaro/rofi-calc
-bindsym $mod+colon exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort -no-history -lines 0
+bindsym $mod+minus exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort -no-history -lines 0
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id dmenu_run

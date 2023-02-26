@@ -19,6 +19,7 @@ numlockx
 papirus-icon-theme
 pavucontrol
 picom-ibhagwan-git
+playerctl
 polybar
 posy-improved-cursors
 pulseaudio-control
