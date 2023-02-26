@@ -7,7 +7,7 @@
 - Bar: Polybar
 - Shell: ZSH
 - Terminal: Kitty
-- File manager: Ranger
+- File manager: Thunar
 - Launcher: Rofi
 - Notifications: Dunst
 - Editor: Vim

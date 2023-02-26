@@ -12,6 +12,7 @@ i3-wm
 i3-sensible-browser-git
 jq
 kitty
+lxappearance
 ly
 maim
 noto-fonts-emoji
@@ -23,12 +24,12 @@ playerctl
 polybar
 posy-improved-cursors
 pulseaudio-control
-ranger
 rofi
 rofi-calc
 rofi-emoji
 rofi-greenclip
 rofi-power-menu
+thunar
 ttc-iosevka
 ttf-droid
 ttf-fira-code

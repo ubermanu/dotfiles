@@ -73,7 +73,7 @@ floating_modifier $mod
 bindsym $mod+Return exec i3-sensible-terminal
 
 # file manager and browser
-bindsym $mod+f exec i3-sensible-terminal ranger
+bindsym $mod+f exec thunar 
 bindsym $mod+w exec i3-sensible-browser        
 
 # kill focused window
