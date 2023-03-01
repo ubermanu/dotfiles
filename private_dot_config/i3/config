@@ -80,7 +80,7 @@ bindsym $mod+w exec i3-sensible-browser
 bindsym $mod+q kill
 
 # power menu
-bindsym $mod+Escape exec rofi -show power-menu -modi power-menu:rofi-power-menu
+bindsym $mod+Shift+Escape exec rofi -show power-menu -modi power-menu:rofi-power-menu
 
 # https://github.com/Mange/rofi-emoji
 bindsym $mod+semicolon exec rofi -show emoji -modi emoji -emoji-format '{emoji} <span weight="bold">{name}</span>[ <span size="small">({keywords})</span>]' 
