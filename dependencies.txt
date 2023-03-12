@@ -30,6 +30,7 @@ rofi-emoji
 rofi-greenclip
 rofi-power-menu
 thunar
+thunar-archive-plugin
 ttc-iosevka
 ttf-droid
 ttf-fira-code
