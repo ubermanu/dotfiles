@@ -39,9 +39,11 @@ ttf-iosevka-nerd
 ttf-liberation
 ttf-nerd-fonts-symbols-1000-em
 unzip
+usbutils
 xclip
 xdg-user-dirs
 xdotool
+xorg-xinput
 xsel
 xss-lock
 zsh-theme-powerlevel10k-git

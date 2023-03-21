@@ -1,15 +1,16 @@
 # set default screen layout
 ~/.screenlayout/default.sh
 
-setxkbmap dvorak
+# kbd layout
+setxkbmap -layout us -variant dvorak
 
 # path
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # env
-export VISUAL=vim
-export EDITOR=vim
+export VISUAL=nvim
+export EDITOR=nvim
 export SUDO_PROMPT="passwd: "
 export BROWSER=google-chrome-stable
 export TERMINAL=kitty

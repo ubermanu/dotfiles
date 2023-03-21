@@ -93,9 +93,9 @@ bindsym $mod+Shift+s exec screensht area
 #bindsym $mod+p exec xcolor-pick
 
 # copy paste with dvorak + mouse
-bindsym --release $mod+p exec --no-startup-id "xdotool-mod shift+Insert"
-bindsym --release $mod+y exec --no-startup-id "xdotool-mod ctrl+Insert"
-bindsym --release $mod+x exec --no-startup-id "xdotool-mod shift+Delete"
+#bindsym --release $mod+p exec --no-startup-id "xdotool-mod shift+Insert"
+#bindsym --release $mod+y exec --no-startup-id "xdotool-mod ctrl+Insert"
+#bindsym --release $mod+x exec --no-startup-id "xdotool-mod shift+Delete"
 
 # clipboard tool
 exec --no-startup-id greenclip daemon>/dev/null
