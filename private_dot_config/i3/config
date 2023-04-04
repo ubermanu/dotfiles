@@ -8,21 +8,26 @@
 exec --no-startup-id betterlockscreen -w dim
 exec --no-startup-id $HOME/.fehbg 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-#exec --no-startup-id picom -b
+exec --no-startup-id picom -b
 
 exec_always --no-startup-id numlockx on
 
 # i3 gaps
-#gaps inner 0
-#gaps outer 0
+gaps inner 5
+gaps outer 5
+smart_gaps on
+smart_borders on
+
+# Set floating popup for splashes (like phpstorm)
+popup_during_fullscreen smart
 
 # 1px border
-for_window [class="^.*"] border pixel 1
-default_border pixel 1
-default_floating_border pixel 1
+for_window [class="^.*"] border pixel 0
+default_border pixel 0
+default_floating_border pixel 0
 
 # update focused border color
-client.focused #333333 #333333 #333333 #333333 #888888
+client.focused #333333 #333333 #333333 #333333 #555555
 
 # i3 config file (v4)
 #

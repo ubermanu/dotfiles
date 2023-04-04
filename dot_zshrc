@@ -67,10 +67,14 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 # react native
-export ANDROID_SDK_ROOT=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
-export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+#export ANDROID_HOME=/opt/android-sdk
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+#export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+export PATH=$PATH:$ANDROID_HOME/build-tools
 
 # n
 export N_PREFIX=$HOME/.n
 export PATH=$N_PREFIX/bin:$PATH
+
