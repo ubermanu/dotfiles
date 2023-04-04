@@ -11,6 +11,7 @@ htop
 i3-wm
 i3-sensible-browser-git
 jq
+khal
 kitty
 lxappearance
 ly
