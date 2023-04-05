@@ -20,7 +20,7 @@ noto-fonts-emoji
 numlockx
 papirus-icon-theme
 pavucontrol
-picom-ibhagwan-git
+picom-git
 playerctl
 polybar
 posy-improved-cursors
