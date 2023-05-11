@@ -3,12 +3,17 @@
 # This script is used to run doas instead of sudo.
 # It is called sudo, so it maps all arguments to doas
 # and then runs doas with the mapped arguments.
+# See https://github.com/ubermanu/sudoas
 
 # shellcheck disable=SC2034
 yellow=$(tput setaf 3)
 end=$(tput sgr0)
 # shellcheck disable=SC2034
 
+# If TEST is set to 1, the script will output the arguments
+TEST=${TEST:-0}
+
+# Parse arguments
 doas_args=()
 
 while [[ $# -gt 0 ]]; do
@@ -24,16 +29,16 @@ while [[ $# -gt 0 ]]; do
     echo "Version: 1.0"
     exit 0
     ;;
-  -v | --validate)
-    # not supported
-    shift
-    ;;
   -n | --non-interactive)
     doas_args+=(-n)
     shift
     ;;
   -s | --shell)
     doas_args+=(-s)
+    shift
+    ;;
+  -s=* | --shell=*)
+    doas_args+=(-s "${key#*=}")
     shift
     ;;
   -u | --user)
@@ -49,27 +54,21 @@ while [[ $# -gt 0 ]]; do
     shift
     shift
     ;;
-  -p=* | --prompt=*)
-    # not supported
-    shift
-    ;;
-  -C | --preserve-env)
-    # not supported
-    shift
-    ;;
   -c | --command)
     # not supported
     shift
     shift
     ;;
-  -)
-    # not supported
+  -* | --*)
+    # Ignore unsupported options
+    # Match any option that starts with - or --
+    # and any option that starts with -- and contains an =
     shift
     ;;
   *)
     # If not a sudo argument, assume it's a command and arguments
-    doas_args+=("$1")
-    shift
+    doas_args+=("$@")
+    break
     ;;
   esac
 done
@@ -81,7 +80,10 @@ if [[ ${#doas_args[@]} -eq 0 ]]; then
   exit 0
 fi
 
-#echo "doas_args: ${doas_args[@]}"
-#exit 1
+# If TEST is set to 1, output the arguments and exit
+if [[ $TEST -eq 1 ]]; then
+  echo "${doas_args[*]}"
+  exit 0
+fi
 
 doas "${doas_args[@]}"

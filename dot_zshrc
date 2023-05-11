@@ -66,7 +66,7 @@ export PATH="$PNPM_HOME:$PATH"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# react native
+# Android SDK
 #export ANDROID_HOME=/opt/android-sdk
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
@@ -77,4 +77,8 @@ export PATH=$PATH:$ANDROID_HOME/build-tools
 # n
 export N_PREFIX=$HOME/.n
 export PATH=$N_PREFIX/bin:$PATH
+
+# Wasmer
+export WASMER_DIR=$HOME/.wasmer
+[ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
 

@@ -18,7 +18,6 @@ gaps outer 5
 smart_gaps on
 smart_borders on
 
-# Set floating popup for splashes (like phpstorm)
 popup_during_fullscreen smart
 
 # 1px border

@@ -29,7 +29,7 @@ rofi
 rofi-calc
 rofi-emoji
 rofi-greenclip
-rofi-power-menu
+rofi-power-menu-git
 thunar
 thunar-archive-plugin
 ttc-iosevka
