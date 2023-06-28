@@ -82,3 +82,5 @@ export PATH=$N_PREFIX/bin:$PATH
 export WASMER_DIR=$HOME/.wasmer
 [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
 
+
+source /home/manu/.config/broot/launcher/bash/br

@@ -1,6 +1,7 @@
 theme = "darcula-solid"
 
 [editor]
+true-color = true
 line-number = "relative"
 mouse = true
 bufferline = "multiple"
@@ -16,6 +17,9 @@ left = ["mode", "spinner", "version-control", "file-modification-indicator", "fi
 
 [editor.lsp]
 display-inlay-hints = true
+
+[editor.file-picker]
+hidden = false
 
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
