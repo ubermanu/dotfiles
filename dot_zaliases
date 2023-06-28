@@ -1,8 +1,11 @@
+#!/bin/bash
+
 # Aliases
 
-#alias v="vim"
-alias vim="nvim"
+alias vim="helix" # helps to remove old habits
+alias hx="helix"
 
+# git
 alias g='git'
 alias ga='git add'
 alias gaa='git add --all'
@@ -16,10 +19,10 @@ alias gl='git pull'
 alias gp='git push'
 alias gpf!='git push --force'
 alias gst='git status'
-alias gk='git checkout'
+alias gco='git checkout'
 alias grst='git reset'
 
-
+# LS
 alias l='ls -lh'
 alias ll='ls -Alh'
 alias ls='ls --color'
@@ -27,3 +30,4 @@ alias ls='ls --color'
 alias mv='mv -i'
 alias cp='cp -i'
 alias rm='rm -i'
+
