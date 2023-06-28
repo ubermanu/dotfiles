@@ -11,6 +11,12 @@ enable = true
 [editor.cursor-shape]
 insert = "bar"
 
+[editor.statusline]
+left = ["mode", "spinner", "version-control", "file-modification-indicator", "file-name"]
+
+[editor.lsp]
+display-inlay-hints = true
+
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
 
