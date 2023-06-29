@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-fill '~/.wallpaper/pexels-cátia-matos-1072179.jpg' 
