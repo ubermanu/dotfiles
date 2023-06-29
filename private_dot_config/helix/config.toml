@@ -2,7 +2,9 @@ theme = "darcula-solid"
 
 [editor]
 true-color = true
-line-number = "relative"
+color-modes = true
+#line-number = "relative"
+cursorline = true
 mouse = true
 bufferline = "multiple"
 
@@ -23,10 +25,16 @@ hidden = false
 
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
+d = ["delete_selection_noyank"]
+c = ["change_selection_noyank"]
+C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+C-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 
 [keys.normal.space]
 w = ":write"
 q = ":buffer-close"
+x = ":write-quit"
+t = ":sh $TERMINAL"
 
 [keys.insert]
 C-backspace = ["delete_word_backward"]
