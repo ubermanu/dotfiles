@@ -1,0 +1,5 @@
+[user]
+	name = ubermanu
+	email = manu@paca.happy-dev.fr
+[core]
+	autocrlf = input
