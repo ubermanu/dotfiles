@@ -3,10 +3,9 @@ theme = "darcula-solid"
 [editor]
 true-color = true
 color-modes = true
-#line-number = "relative"
-cursorline = true
 mouse = true
-bufferline = "multiple"
+cursorline = true
+bufferline = "always"
 
 [editor.soft-wrap]
 enable = true
@@ -33,9 +32,9 @@ C-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 [keys.normal.space]
 w = ":write"
 q = ":buffer-close"
-x = ":write-quit"
+x = ":write-buffer-close"
 t = ":sh $TERMINAL"
 
 [keys.insert]
 C-backspace = ["delete_word_backward"]
-C-del = ["kill_to_line_end"]
+C-del = ["delete_word_forward"]
