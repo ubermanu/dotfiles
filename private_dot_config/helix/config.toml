@@ -32,6 +32,8 @@ d = ["delete_selection_noyank"]
 c = ["change_selection_noyank"]
 C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
 C-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+X = ["extend_line_up", "extend_to_line_bounds"]
+D = ["delete_char_backward"]
 
 [keys.normal.space]
 w = ":write"
