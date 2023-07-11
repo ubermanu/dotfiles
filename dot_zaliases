@@ -18,8 +18,10 @@ alias gds='git diff --staged'
 alias gl='git pull'
 alias gp='git push'
 alias gpf!='git push --force'
+alias gpt='git push --tag'
 alias gst='git status'
 alias gco='git checkout'
+alias gcob='git cherkout -b'
 alias grst='git reset'
 
 # LS

@@ -7,11 +7,15 @@ mouse = true
 cursorline = true
 bufferline = "always"
 
+auto-format = true
+auto-save = true
+
 [editor.soft-wrap]
 enable = true
 
 [editor.cursor-shape]
 insert = "bar"
+select = "underline"
 
 [editor.statusline]
 left = ["mode", "spinner", "version-control", "file-modification-indicator", "file-name"]

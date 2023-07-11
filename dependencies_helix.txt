@@ -1,0 +1,12 @@
+bash-language-server
+codelldb-bin
+dockerfile-language-server
+helix
+marksman
+rust-analyzer
+svelte-language-server
+typescript-language-server
+vscode-css-languageserver
+vscode-html-languageserver
+vscode-json-languageserver
+yaml-language-server
