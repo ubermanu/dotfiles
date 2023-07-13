@@ -1,0 +1,16 @@
+# https://github.com/helix-editor/helix/issues/1896
+[language-server.emmet-ls]
+command = "emmet-ls"
+args = ["--stdio"]
+
+[[language]]
+name = "html"
+language-servers = ["vscode-html-language-server", "emmet-ls"]
+
+[[language]]
+name = "svelte"
+language-servers = ["svelteserver", "emmet-ls"]
+
+[[language]]
+name = "css"
+file-types = ["css", "scss", "less"]

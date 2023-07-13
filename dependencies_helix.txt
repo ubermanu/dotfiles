@@ -5,6 +5,7 @@ helix
 marksman
 rust-analyzer
 svelte-language-server
+taplo
 typescript-language-server
 vscode-css-languageserver
 vscode-html-languageserver
