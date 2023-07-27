@@ -26,6 +26,7 @@ picom-git
 playerctl
 polybar
 posy-improved-cursors
+progress
 pulseaudio-control
 rofi
 rofi-calc
