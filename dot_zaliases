@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# Aliases
-
-alias vim="helix" # helps to remove old habits
-alias hx="helix"
-
 # git
 alias g='git'
 alias ga='git add'
@@ -21,7 +16,7 @@ alias gpf!='git push --force'
 alias gpt='git push --tag'
 alias gst='git status'
 alias gco='git checkout'
-alias gcob='git cherkout -b'
+alias gcob='git checkout -b'
 alias grst='git reset'
 
 # LS
