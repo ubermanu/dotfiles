@@ -10,11 +10,12 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # env
 export VISUAL=nvim
-export EDITOR=helix
+export EDITOR=hx
 export SUDO_PROMPT="passwd: "
 export BROWSER=google-chrome-stable
 export TERMINAL=kitty
 export TERM=xterm
+export GIT_EDITOR=$EDITOR
 
 export XCURSOR_THEME="Posy_Cursor"
 
