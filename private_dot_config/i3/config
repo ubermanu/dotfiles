@@ -8,7 +8,7 @@
 exec --no-startup-id betterlockscreen -w dim
 exec --no-startup-id $HOME/.fehbg 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec --no-startup-id picom -b
+#exec --no-startup-id picom -b
 
 exec_always --no-startup-id numlockx on
 
@@ -24,6 +24,9 @@ popup_during_fullscreen smart
 for_window [class="^.*"] border pixel 0
 default_border pixel 0
 default_floating_border pixel 0
+
+# Floating windows
+for_window [class="Yad" title="yad-calendar"] floating enable
 
 # update focused border color
 client.focused #333333 #333333 #333333 #333333 #555555

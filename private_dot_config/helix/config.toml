@@ -22,6 +22,8 @@ left = ["mode", "spinner", "version-control", "file-modification-indicator", "fi
 
 [editor.lsp]
 display-inlay-hints = true
+display-signature-help-docs = true
+# inline-diagnostics = { max-warp = 1 }
 
 [editor.file-picker]
 hidden = false
@@ -34,13 +36,19 @@ C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_befor
 C-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 X = ["extend_line_up", "extend_to_line_bounds"]
 D = ["delete_char_backward"]
-y = [":clipboard-yank"]
+y = ["yank_to_clipboard"]
+p = ["paste_clipboard_after"]
+P = ["paste_clipboard_before"]
 C-e = ["toggle_comments"]
+
+# Keep the view vertically centered on page up/down
+# C-u = ["half_page_up", "align_view_center"]
+C-d = ["half_page_down", "align_view_center"]
 
 [keys.normal.space]
 w = ":write"
-q = ":buffer-close"
-x = ":write-buffer-close"
+q = ":quit!"
+x = ":write-quit!"
 t = ":sh $TERMINAL"
 l = ":format"
 
