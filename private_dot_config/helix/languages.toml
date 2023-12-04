@@ -8,9 +8,21 @@ name = "html"
 language-servers = ["vscode-html-language-server", "emmet-ls"]
 
 [[language]]
-name = "svelte"
-language-servers = ["svelteserver", "emmet-ls"]
+name = "css"
+file-types = ["css", "scss", "less", "pcss", "postcss"]
 
 [[language]]
-name = "css"
-file-types = ["css", "scss", "less"]
+name = "gdscript"
+language-servers = ["godot"]
+
+[language-server.godot]
+command = "tcp-language-server"
+args = ["127.0.0.1", "6005"]
+
+[[language]]
+name = "php"
+language-servers = ["phpactor"]
+
+[language-server.phpactor]
+command = "phpactor"
+args = ["language-server", "-q"]
