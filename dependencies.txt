@@ -18,6 +18,7 @@ lf
 lxappearance
 ly
 maim
+mirage
 noto-fonts-emoji
 numlockx
 papirus-icon-theme
