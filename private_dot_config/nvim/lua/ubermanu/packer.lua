@@ -15,4 +15,6 @@ return require('packer').startup(function(use)
 	)
 
 	use 'justinmk/vim-sneak'
+
+	use 'github/copilot.vim'
 end)

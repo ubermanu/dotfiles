@@ -7,7 +7,14 @@ x-scheme-handler/about=google-chrome.desktop
 x-scheme-handler/unknown=google-chrome.desktop
 image/svg+xml=org.inkscape.Inkscape.desktop
 application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
+application/x-zerosize=code-oss.desktop
+image/png=feh.desktop
 
 [Added Associations]
 image/svg+xml=org.inkscape.Inkscape.desktop;
-application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;com.github.xournalpp.xournalpp.desktop;
+application/pdf=com.github.xournalpp.xournalpp.desktop;firefoxdeveloperedition.desktop;org.pwmt.zathura-pdf-mupdf.desktop;
+image/png=krita_png.desktop;feh.desktop;gimp.desktop;
+text/html=code-oss.desktop;
+application/x-zerosize=code-oss.desktop;
+text/plain=code.desktop;
+image/jpeg=feh.desktop;gimp.desktop;krita_jpeg.desktop;
