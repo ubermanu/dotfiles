@@ -9,7 +9,7 @@ language-servers = ["vscode-html-language-server", "emmet-ls"]
 
 [[language]]
 name = "css"
-file-types = ["css", "scss", "less", "pcss", "postcss"]
+file-types = ["css", "pcss", "postcss"]
 
 [[language]]
 name = "gdscript"
@@ -26,3 +26,8 @@ language-servers = ["phpactor"]
 [language-server.phpactor]
 command = "phpactor"
 args = ["language-server", "-q"]
+
+[[language]]
+name = "zig"
+file-types = ["zig", "zon"]
+
