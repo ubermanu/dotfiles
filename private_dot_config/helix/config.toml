@@ -38,6 +38,7 @@ X = ["extend_line_up", "extend_to_line_bounds"]
 D = ["delete_char_backward"]
 C-e = ["toggle_comments"]
 home = ["goto_first_nonwhitespace"]
+G = ["goto_last_line"]
 
 # Use main clipboard
 y = ["yank_to_clipboard"]
@@ -68,5 +69,5 @@ C-del = ["delete_word_forward"]
 C-ret = ["completion"]
 home = ["goto_first_nonwhitespace"]
 
-[keys.normal.m]
-w = ["move_prev_word_start", "move_next_word_end"]
+# [keys.normal.m]
+# w = ["select_textobject_inner"]

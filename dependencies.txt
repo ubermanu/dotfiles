@@ -1,6 +1,5 @@
 arandr
 betterlockscreen
-broot
 cantarell-fonts
 dex
 dragon-drop
@@ -14,16 +13,16 @@ i3-sensible-browser-git
 i3-wm
 jq
 kitty
-lf
 lxappearance
 ly
 maim
 mirage
 noto-fonts-emoji
 numlockx
+nvidia-settings
 papirus-icon-theme
 pavucontrol
-picom-git
+picom
 playerctl
 polybar
 posy-improved-cursors
