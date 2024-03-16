@@ -1,4 +1,5 @@
-theme = "darcula-solid"
+# theme = "darcula-solid"
+theme = "autumn_night"
 
 [editor]
 true-color = true
@@ -32,23 +33,43 @@ hidden = false
 esc = ["collapse_selection", "keep_primary_selection"]
 d = ["delete_selection_noyank"]
 c = ["change_selection_noyank"]
-C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
-C-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 X = ["extend_line_up", "extend_to_line_bounds"]
 D = ["delete_char_backward"]
 C-e = ["toggle_comments"]
 home = ["goto_first_nonwhitespace"]
 G = ["goto_last_line"]
 
-# Use main clipboard
-y = ["yank_to_clipboard"]
-p = ["paste_clipboard_after"]
-P = ["paste_clipboard_before"]
-r = ["replace_selections_with_clipboard"]
+# Dvorak friendly movements (J -> T, N -> K, L -> S)
+# n = "move_visual_line_up"
+# N = "no_op"
+# t = "move_visual_line_down"
+# T = "no_op"
+# s = "move_char_right"
+# S = "no_op"
+# l = "search_next"
+# L = "search_prev"
 
-# Keep the view vertically centered on page up/down
-# C-u = ["half_page_up", "align_view_center"]
-C-d = ["half_page_down", "align_view_center"]
+# Move selection
+C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+C-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+
+# Duplicate line
+C-d = ["extend_to_line_bounds", "yank", "paste_after"]
+C-D = ["extend_to_line_bounds", "yank", "paste_before"]
+
+# Use main clipboard
+y = "yank_to_clipboard"
+p = "paste_clipboard_after"
+P = "paste_clipboard_before"
+r = "replace_selections_with_clipboard"
+
+[keys.select]
+
+# Use main clipboard
+y = "yank_to_clipboard"
+p = "paste_clipboard_after"
+P = "paste_clipboard_before"
+r = "replace_selections_with_clipboard"
 
 [keys.normal.space]
 w = ":write"
@@ -68,6 +89,3 @@ C-backspace = ["delete_word_backward"]
 C-del = ["delete_word_forward"]
 C-ret = ["completion"]
 home = ["goto_first_nonwhitespace"]
-
-# [keys.normal.m]
-# w = ["select_textobject_inner"]
