@@ -5,6 +5,7 @@
 # this file and re-run i3-config-wizard(1).
 #
 
+exec --no-startup-id ~/.screenlayout/default.sh
 exec --no-startup-id betterlockscreen -w dim
 exec --no-startup-id $HOME/.fehbg 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
@@ -18,6 +19,7 @@ gaps outer 5
 smart_gaps on
 smart_borders on
 
+focus_on_window_activation urgent
 popup_during_fullscreen smart
 
 # 1px border
@@ -29,19 +31,18 @@ default_floating_border pixel 0
 client.focused #333333 #333333 #333333 #333333 #555555
 
 # https://github.com/ValveSoftware/steam-for-linux/issues/1040
-#for_window [class="^Steam$" title="^Friends$"] floating enable
-#for_window [class="^Steam$" title="Steam - News"] floating enable
-#for_window [class="^Steam$" title=".* - Chat"] floating enable
-#for_window [class="^Steam$" title="^Settings$"] floating enable
-#for_window [class="^Steam$" title=".* - event started"] floating enable
-#for_window [class="^Steam$" title=".* CD key"] floating enable
-#for_window [class="^Steam$" title="^Steam - Self Updater$"] floating enable
-#for_window [class="^Steam$" title="^Screenshot Uploader$"] floating enable
-#for_window [class="^Steam$" title="^Steam Guard - Computer Authorization Required$"] floating enable
-#for_window [title="^Steam Keyboard$"] floating enable
+for_window [class="^steam$"] floating enable
+for_window [class="^Steam$"] floating enable
+for_window [class="^steam$" title="^Steam$"] floating disable
 
 # https://github.com/ValveSoftware/steam-for-linux/issues/9458
-no_focus [class="steam"]
+no_focus [class="^steam$"]
+no_focus [class="^Steam$"]
+no_focus [class="^Steamwebhelper$"]
+
+# Godot
+for_window[instance="Godot_Editor"] floating disable
+for_window[instance="Godot_Engine"] floating enable
 
 # i3 config file (v4)
 #

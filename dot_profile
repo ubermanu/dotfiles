@@ -1,6 +1,3 @@
-# set default screen layout
-~/.screenlayout/default.sh
-
 # kbd layout
 setxkbmap -layout us -variant dvorak
 
@@ -18,4 +15,3 @@ export TERM=xterm
 export GIT_EDITOR=$EDITOR
 
 export XCURSOR_THEME="Posy_Cursor"
-
