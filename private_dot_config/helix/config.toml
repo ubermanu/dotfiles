@@ -1,5 +1,4 @@
-# theme = "darcula-solid"
-theme = "autumn_night"
+theme = "darcula-solid"
 
 [editor]
 true-color = true
@@ -24,7 +23,10 @@ left = ["mode", "spinner", "version-control", "file-modification-indicator", "fi
 [editor.lsp]
 display-inlay-hints = true
 display-signature-help-docs = true
-# inline-diagnostics = { max-warp = 1 }
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+other-lines = "error"
 
 [editor.file-picker]
 hidden = false
@@ -38,6 +40,7 @@ D = ["delete_char_backward"]
 C-e = ["toggle_comments"]
 home = ["goto_first_nonwhitespace"]
 G = ["goto_last_line"]
+"," = "repeat_last_motion"
 
 # Dvorak friendly movements (J -> T, N -> K, L -> S)
 # n = "move_visual_line_up"
@@ -73,8 +76,8 @@ r = "replace_selections_with_clipboard"
 
 [keys.normal.space]
 w = ":write"
-q = ":quit!"
-x = ":write-quit!"
+# q = ":quit!"
+# x = ":write-quit!"
 t = ":sh $TERMINAL"
 l = ":format"
 y = "no_op"

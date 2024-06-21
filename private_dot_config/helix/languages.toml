@@ -30,4 +30,3 @@ args = ["language-server", "-q"]
 [[language]]
 name = "zig"
 file-types = ["zig", "zon"]
-
