@@ -19,7 +19,7 @@ alias gco='git checkout'
 alias gcob='git checkout -b'
 alias grst='git reset'
 
-# LS
+# ls
 alias l='ls -lh'
 alias ll='ls -Alh'
 alias ls='ls --color'
@@ -28,4 +28,10 @@ alias mv='mv -i'
 alias cp='cp -i'
 alias rm='rm -i'
 
+# lazygit
+# https://github.com/jesseduffield/lazygit
 alias lg='lazygit'
+
+# zigup
+# https://github.com/marler8997/zigup
+alias zigup="zigup --install-dir $HOME/.zigup/"

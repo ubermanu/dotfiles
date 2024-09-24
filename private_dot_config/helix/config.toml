@@ -41,6 +41,7 @@ C-e = ["toggle_comments"]
 home = ["goto_first_nonwhitespace"]
 G = ["goto_last_line"]
 "," = "repeat_last_motion"
+"'" = "goto_word"
 
 # Dvorak friendly movements (J -> T, N -> K, L -> S)
 # n = "move_visual_line_up"
@@ -67,7 +68,6 @@ P = "paste_clipboard_before"
 r = "replace_selections_with_clipboard"
 
 [keys.select]
-
 # Use main clipboard
 y = "yank_to_clipboard"
 p = "paste_clipboard_after"
@@ -75,9 +75,9 @@ P = "paste_clipboard_before"
 r = "replace_selections_with_clipboard"
 
 [keys.normal.space]
-w = ":write"
-# q = ":quit!"
-# x = ":write-quit!"
+W = ":write"
+Q = ":quit!"
+X = ":write-quit!"
 t = ":sh $TERMINAL"
 l = ":format"
 y = "no_op"
