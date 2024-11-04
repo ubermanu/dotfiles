@@ -2,8 +2,8 @@
 export PATH="$HOME/.local/bin:$PATH"
 
 # env
-export VISUAL=hx
-export EDITOR=hx
+export VISUAL=helix
+export EDITOR=helix
 export SUDO_PROMPT="passwd: "
 export BROWSER=google-chrome-stable
 export TERMINAL=kitty
