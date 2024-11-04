@@ -1,12 +1,8 @@
-# kbd layout
-setxkbmap -layout us -variant dvorak
-
 # path
 export PATH="$HOME/.local/bin:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
 
 # env
-export VISUAL=nvim
+export VISUAL=hx
 export EDITOR=hx
 export SUDO_PROMPT="passwd: "
 export BROWSER=google-chrome-stable
