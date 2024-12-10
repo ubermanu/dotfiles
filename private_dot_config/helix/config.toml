@@ -24,9 +24,9 @@ left = ["mode", "spinner", "version-control", "file-modification-indicator", "fi
 display-inlay-hints = true
 display-signature-help-docs = true
 
-[editor.inline-diagnostics]
-cursor-line = "warning"
-other-lines = "error"
+# [editor.inline-diagnostics]
+# cursor-line = "warning"
+# other-lines = "error"
 
 [editor.file-picker]
 hidden = false
@@ -58,8 +58,8 @@ C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_befor
 C-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 
 # Duplicate line
-C-d = ["extend_to_line_bounds", "yank", "paste_after"]
-C-D = ["extend_to_line_bounds", "yank", "paste_before"]
+# C-d = ["extend_to_line_bounds", "yank", "paste_after"]
+# C-D = ["extend_to_line_bounds", "yank", "paste_before"]
 
 # Use main clipboard
 y = "yank_to_clipboard"
