@@ -35,5 +35,3 @@ alias lg='lazygit'
 # zigup
 # https://github.com/marler8997/zigup
 alias zigup="zigup --install-dir $HOME/.zigup/ --path-link $HOME/.local/bin/zig"
-
-alias hx="helix"
