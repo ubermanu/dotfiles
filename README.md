@@ -6,11 +6,11 @@
 - WM: i3
 - Bar: Polybar
 - Shell: ZSH
-- Terminal: Kitty
+- Terminal: Ghostty
 - File manager: Thunar
 - Launcher: Rofi
 - Notifications: Dunst
-- Editor: Vim
+- Editor: Helix
 - Browser: Google Chrome
 
 ## Install
@@ -19,6 +19,6 @@ See https://www.chezmoi.io/
 
 ## Dependencies
 
-Install https://github.com/Jguer/yay
+Install https://github.com/Morganamilo/paru
 
-    yay -S $(cat dependencies.txt | tr '\n' ' ') 
+    paru -S $(cat dependencies.txt | tr '\n' ' ')
