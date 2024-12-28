@@ -3,7 +3,6 @@ code
 codelldb-bin
 discord
 dockerfile-language-server
-epiphany
 firefox-developer-edition
 gimp
 gitg
@@ -13,8 +12,6 @@ inkscape
 lazygit
 libreoffice-fresh
 marksman
-neovim
-nvim-packer-git
 phpstorm
 phpstorm-jre
 qmk
