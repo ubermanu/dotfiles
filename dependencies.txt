@@ -1,3 +1,4 @@
+7zip
 arandr
 betterlockscreen
 cantarell-fonts
@@ -23,7 +24,6 @@ mirage
 noto-fonts-emoji
 numlockx
 nvidia-settings
-p7zip
 papirus-icon-theme
 pavucontrol
 picom
