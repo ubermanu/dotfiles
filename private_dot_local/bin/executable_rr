@@ -25,7 +25,7 @@ while true; do
     read -rsn1 input_key
 
     if [ "$input_key" = "x" ]; then
-				clear
-				eval "$command_to_execute" "$@"
+        clear
+        eval "$command_to_execute" "$@"
     fi
 done
