@@ -7,6 +7,7 @@ d-tracker
 dunst
 feh
 galendae-git
+ghostty
 gvfs
 htop
 i3-sensible-browser-git

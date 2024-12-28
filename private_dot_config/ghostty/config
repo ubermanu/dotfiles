@@ -1,0 +1,15 @@
+theme = Arthur
+
+# fonts
+font-family = "Fira Code"
+font-family-italic = "Iosevka"
+font-size = 12.0
+
+# window
+window-decoration = false
+window-padding-x = 8
+window-padding-y = 8
+
+# keyboard shortcuts
+keybind = shift+insert=paste_from_clipboard
+keybind = ctrl+insert=copy_to_clipboard

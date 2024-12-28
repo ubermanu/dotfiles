@@ -1,12 +1,15 @@
 # path
 export PATH="$HOME/.local/bin:$PATH"
 
+# fallback helix to helix-git
+command -v helix >/dev/null 2>&1 || alias helix='hx'
+
 # env
 export VISUAL=helix
 export EDITOR=helix
 export SUDO_PROMPT="passwd: "
 export BROWSER=google-chrome-stable
-export TERMINAL=kitty
+export TERMINAL=ghostty
 export TERM=xterm
 export GIT_EDITOR=$EDITOR
 
