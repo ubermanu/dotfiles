@@ -46,7 +46,7 @@ ttf-fira-code
 ttf-inconsolata
 ttf-iosevka-nerd
 ttf-liberation
-ttf-nerd-fonts-symbols-1000-em
+ttf-nerd-fonts-symbols
 tumbler
 unzip
 usbutils
