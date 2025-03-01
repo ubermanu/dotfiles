@@ -14,10 +14,9 @@ smart_borders on
 # focus_on_window_activation urgent
 popup_during_fullscreen smart
 
-# 1px border
+# window borders
 for_window [class="^.*"] border pixel 2
-default_border pixel 2
-default_floating_border pixel 0
+for_window [floating] border pixel 0
 
 # update focused border color
 client.focused #333333 #333333 #333333 #333333 #FFFFFF33
