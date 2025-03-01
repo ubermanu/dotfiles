@@ -24,7 +24,7 @@ format = "[$symbol$branch]($style)"
 style = "bright-black"
 
 [git_status]
-format = "[(*$conflicted$untracked$modified$staged$renamed$deleted [$ahead_behind](cyan))]($style) "
+format = "[(*$conflicted$untracked$modified$staged$renamed$deleted)]($style) ([$ahead_behind](cyan) )"
 style = "bright-black"
 ahead = " "
 behind = " "
