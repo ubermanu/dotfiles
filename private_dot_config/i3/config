@@ -11,16 +11,16 @@ gaps outer 5
 smart_gaps on
 smart_borders on
 
-focus_on_window_activation urgent
+# focus_on_window_activation urgent
 popup_during_fullscreen smart
 
 # 1px border
-for_window [class="^.*"] border pixel 0
-default_border pixel 0
+for_window [class="^.*"] border pixel 2
+default_border pixel 2
 default_floating_border pixel 0
 
 # update focused border color
-client.focused #333333 #333333 #333333 #333333 #555555
+client.focused #333333 #333333 #333333 #333333 #FFFFFF33
 
 # https://github.com/ValveSoftware/steam-for-linux/issues/1040
 for_window [class="^steam$"] floating enable
