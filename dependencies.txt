@@ -3,10 +3,10 @@ arandr
 betterlockscreen
 cantarell-fonts
 dex
-dragon-drop
 d-tracker
 dunst
 feh
+fzf
 galendae-git
 ghostty
 gvfs
@@ -23,6 +23,7 @@ mirage
 noto-fonts-emoji
 numlockx
 nvidia-settings
+oh-my-zsh-git
 papirus-icon-theme
 pavucontrol
 picom
@@ -37,6 +38,7 @@ rofi-calc
 rofi-emoji
 rofi-greenclip
 rofi-power-menu-git
+starship
 thunar
 thunar-archive-plugin
 ttc-iosevka
@@ -59,4 +61,6 @@ xorg-xinput
 xsel
 xss-lock
 zip
-zsh-theme-powerlevel10k-git
+zsh
+zsh-autosuggestions
+zsh-completions

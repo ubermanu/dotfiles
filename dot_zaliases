@@ -1,23 +1,4 @@
-#!/bin/bash
-
-# git
-alias g='git'
-alias ga='git add'
-alias gaa='git add --all'
-alias gc!='git commit -v --amend'
-alias gc='git commit -v'
-alias gca!='git commit -v -a --amend'
-alias gca='git commit -v -a'
-alias gd='git diff'
-alias gds='git diff --staged'
-alias gl='git pull'
-alias gp='git push'
-alias gpf!='git push --force'
-alias gpt='git push --tag'
-alias gst='git status'
-alias gco='git checkout'
-alias gcob='git checkout -b'
-alias grst='git reset'
+#!/usr/bin/env zsh
 
 # ls
 alias l='ls -lh'
