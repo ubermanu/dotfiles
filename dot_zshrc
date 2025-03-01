@@ -56,6 +56,11 @@ source $HOME/.zaliases
 # starship
 eval "$(starship init zsh)"
 
+# Add a newline between commands
+# https://github.com/starship/starship/issues/560
+precmd() { precmd() { echo "" } }
+alias clear="precmd() { precmd() { echo } } && clear"
+
 # cargo
 export PATH="$HOME/.cargo/bin:$PATH"
 
