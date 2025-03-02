@@ -6,6 +6,7 @@ dockerfile-language-server
 firefox-developer-edition
 gimp
 gitg
+gpick
 google-chrome
 helix
 inkscape
