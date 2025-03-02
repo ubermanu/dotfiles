@@ -90,7 +90,7 @@ bindsym $mod+semicolon exec rofi -show emoji -modi emoji -emoji-format '{emoji} 
 
 # Print screen
 #bindsym Print exec screensht full
-bindsym $mod+Shift+s exec screensht area
+bindsym $mod+Shift+s exec --no-startup-id flameshot gui -c
 
 # clipboard tool
 exec --no-startup-id greenclip daemon>/dev/null
