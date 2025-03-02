@@ -1,4 +1,4 @@
-setxkbmap -model pc104 -layout us -variant dvorak
+# Set default keyboard
+setxkbmap -layout us -variant dvorak-alt-intl
 
 [ -f ~/.profile ] && . ~/.profile
-
