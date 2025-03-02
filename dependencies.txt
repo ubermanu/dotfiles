@@ -9,6 +9,7 @@ d-tracker
 dunst
 exo
 feh
+flameshot
 fzf
 galendae-git
 ghostty
@@ -57,7 +58,6 @@ usbutils
 xautocfg
 xclip
 xdg-user-dirs
-xdotool
 xorg-server
 xorg-xinit
 xorg-xinput
