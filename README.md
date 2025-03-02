@@ -1,7 +1,5 @@
 # dotfiles
 
-![preview](preview.jpg)
-
 - OS: Arch (btw)
 - WM: i3
 - Bar: Polybar
@@ -16,6 +14,12 @@
 ## Install
 
 See https://www.chezmoi.io/
+
+    chezmoi init ubermanu --apply
+
+or
+
+    chezmoi init ubermanu --apply --ssh
 
 ## Dependencies
 

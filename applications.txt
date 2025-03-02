@@ -12,8 +12,6 @@ inkscape
 lazygit
 libreoffice-fresh
 marksman
-phpstorm
-phpstorm-jre
 qmk
 rust-analyzer
 svelte-language-server
