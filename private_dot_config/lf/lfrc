@@ -59,11 +59,19 @@ map a :push %mkdir<space>
 # https://github.com/gokcehan/lf/wiki/Tips#enhancing-the-rename-command
 map r :rename; cmd-home
 
-# make sure trash folder exists
-# %mkdir -p ~/.trash
-
-# move current file or selected files to trash folder (gio)
-cmd trash %set -f; gio trash $fx
+# define a custom 'trash' command
+cmd trash %{{
+    set -f
+    count=$(echo "$fx" | wc -l)
+    if [ "$count" -gt 1 ]; then
+        printf "trash %d files? [y/n] " "$count"
+    else
+        printf "trash %s? [y/n] " "$(basename "$fx")"
+    fi
+    read ans
+    [ "$ans" = "y" ] && gio trash $fx
+    lf -remote "send clear"
+}}
 
 # define a custom 'delete' command
 cmd delete ${{
