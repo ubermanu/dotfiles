@@ -1,0 +1,23 @@
+#!/usr/bin/env sh
+
+# A small utility that toggles file to `*.tmp`
+
+toggle_tmp() {
+    for file in "$@"; do
+        if [ -f "$file" ]; then
+            case "$file" in
+                *.tmp) mv "$file" "${file%.tmp}" ;;
+                *) mv "$file" "$file.tmp" ;;
+            esac
+        else
+            echo "File not found: $file"
+        fi
+    done
+}
+
+if [ $# -eq 0 ]; then
+    echo "Usage: ${0##*/} <filename>"
+    exit 1
+fi
+
+toggle_tmp "$@"
