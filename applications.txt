@@ -6,8 +6,8 @@ dockerfile-language-server
 firefox-developer-edition
 gimp
 gitg
-gpick
 google-chrome
+gpick
 helix
 inkscape
 lazygit
@@ -15,12 +15,14 @@ libreoffice-fresh
 marksman
 qmk
 rust-analyzer
+superhtml
 svelte-language-server
 taplo
 typescript-language-server
 vscode-css-languageserver
 vscode-html-languageserver
 vscode-json-languageserver
+vscode-php-debug
 xournalpp
 yaml-language-server
 zathura

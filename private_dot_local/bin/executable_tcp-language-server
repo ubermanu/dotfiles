@@ -1,0 +1,44 @@
+#!/usr/bin/env node
+
+// Allow a new listener for a running tcp lsp
+// Basically for Helix so i get autocompletion in GDScript files
+// example: tcp-language-server 127.0.0.1 6005
+
+const net = require('net');
+
+const REMOTE_HOST = process.argv[2];
+const REMOTE_PORT = process.argv[3];
+
+const clientSocket = new net.Socket();
+
+// Connect to the LSP server
+clientSocket.connect(REMOTE_PORT, REMOTE_HOST, () => {
+  // Forward data from stdin to LSP server
+  process.stdin.pipe(clientSocket);
+
+  // Forward data from LSP server to stdout
+  clientSocket.pipe(process.stdout);
+});
+
+clientSocket.on('end', () => {
+  process.exit(0);
+});
+
+clientSocket.on('error', (err) => {
+  console.error(`Client Socket Error: ${err.message}`);
+  process.exit(1);
+});
+
+// Handle process exit
+process.on('exit', () => {
+  clientSocket.end();
+});
+
+// Handle process signals
+process.on('SIGINT', () => {
+  process.exit(0);
+});
+
+process.on('SIGTERM', () => {
+  process.exit(0);
+});

@@ -1,11 +1,21 @@
 # https://github.com/helix-editor/helix/issues/1896
-[language-server.emmet-ls]
-command = "emmet-ls"
+[language-server.emmet-language-server]
+command = "emmet-language-server"
 args = ["--stdio"]
+
+# https://github.com/helix-editor/helix/discussions/9665
+[language-server.phpactor]
+command = "phpactor"
+args = ["language-server", "-q"]
+
+[language-server.godot]
+command = "tcp-language-server"
+args = ["127.0.0.1", "6005"]
 
 [[language]]
 name = "html"
-language-servers = ["vscode-html-language-server", "emmet-ls"]
+language-servers = ["superhtml", "emmet-language-server"]
+formatter = { command = "prettier", args = ["--parser", "html"] }
 
 [[language]]
 name = "css"
@@ -15,18 +25,35 @@ file-types = ["css", "pcss", "postcss"]
 name = "gdscript"
 language-servers = ["godot"]
 
-[language-server.godot]
-command = "tcp-language-server"
-args = ["127.0.0.1", "6005"]
-
 [[language]]
 name = "php"
 language-servers = ["phpactor"]
+auto-format = true
 
-[language-server.phpactor]
-command = "phpactor"
-args = ["language-server", "-q"]
+# https://github.com/helix-editor/helix/discussions/7574
+[language.debugger]
+name = "vscode-php-debug"
+transport = "stdio"
+command = "node"
+args = ["/usr/lib/node_modules/php-debug/out/phpDebug.js"]
+
+[[language.debugger.templates]]
+name = "Listen for Xdebug"
+request = "launch"
+completion = ["ignored"]
+args = {}
 
 [[language]]
-name = "zig"
-file-types = ["zig", "zon"]
+name = "svelte"
+formatter = { command = "prettier", args = ["--parser", "svelte"] }
+auto-format = true
+
+[[language]]
+name = "typescript"
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+auto-format = true
+
+[[language]]
+name = "toml"
+formatter = { command = "taplo", args = ["fmt", "-"] }
+auto-format = true

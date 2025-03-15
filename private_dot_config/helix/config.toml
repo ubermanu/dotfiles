@@ -18,7 +18,13 @@ insert = "bar"
 select = "underline"
 
 [editor.statusline]
-left = ["mode", "spinner", "version-control", "file-modification-indicator", "file-name"]
+left = [
+  "mode",
+  "spinner",
+  "version-control",
+  "file-modification-indicator",
+  "file-name",
+]
 
 [editor.lsp]
 display-inlay-hints = true
@@ -44,7 +50,12 @@ G = ["goto_last_line"]
 "'" = "goto_word"
 
 # Move selection
-C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+C-k = [
+  "extend_to_line_bounds",
+  "delete_selection",
+  "move_line_up",
+  "paste_before",
+]
 C-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 
 # Use main clipboard
@@ -72,6 +83,7 @@ p = "no_op"
 P = "no_op"
 R = "no_op"
 n = ":new"
+del = [":sh gio trash %{buffer_name}", ":bc!"]
 
 [keys.insert]
 C-backspace = ["delete_word_backward"]
