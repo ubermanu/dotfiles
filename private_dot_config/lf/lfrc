@@ -60,11 +60,10 @@ map a :push %mkdir<space>
 map r :rename; cmd-home
 
 # make sure trash folder exists
-%mkdir -p ~/.trash
+# %mkdir -p ~/.trash
 
-# move current file or selected files to trash folder
-# (also see 'man mv' for backup/overwrite options)
-cmd trash %set -f; mv $fx ~/.trash
+# move current file or selected files to trash folder (gio)
+cmd trash %set -f; gio trash $fx
 
 # define a custom 'delete' command
 cmd delete ${{
