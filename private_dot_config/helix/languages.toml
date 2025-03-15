@@ -57,3 +57,8 @@ auto-format = true
 name = "toml"
 formatter = { command = "taplo", args = ["fmt", "-"] }
 auto-format = true
+
+[[language]]
+name = "yaml"
+formatter = { command = "prettier", args = ["--parser", "yaml"] }
+auto-format = true
