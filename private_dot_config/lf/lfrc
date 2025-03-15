@@ -23,8 +23,8 @@ set scrolloff 10
 # Use the `dim` attribute instead of underline for the cursor in the preview pane
 set cursorpreviewfmt "\033[7;2m"
 
-# use $ for shell commands
-# map <enter> shell
+# use <enter> to open the file
+map <enter> open "$f"
 
 # show the result of execution of previous commands
 map ` !true
