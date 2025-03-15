@@ -100,7 +100,7 @@ p = "no_op"
 P = "no_op"
 R = "no_op"
 n = ":new"
-del = [":sh gio trash %{buffer_name}", ":bc!"]
+S-del = [":sh gio trash %{buffer_name}", ":bc!"]
 
 [keys.insert]
 C-backspace = ["delete_word_backward"]
