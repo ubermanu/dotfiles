@@ -64,12 +64,29 @@ p = "paste_clipboard_after"
 P = "paste_clipboard_before"
 r = "replace_selections_with_clipboard"
 
+# Fix international keyboard keymaps
+# https://github.com/helix-editor/helix/issues/9862
+# https://docs.helix-editor.com/commands.html#static-commands
+"ß" = "split_selection_on_newline"
+"â" = "flip_selections"
+"ë" = "select_prev_sibling"
+"à" = "select_all_siblings"
+"û" = "earlier"
+
 [keys.select]
 # Use main clipboard
 y = "yank_to_clipboard"
 p = "paste_clipboard_after"
 P = "paste_clipboard_before"
 r = "replace_selections_with_clipboard"
+
+# Fix international keyboard keymaps
+# https://github.com/helix-editor/helix/issues/9862
+# https://docs.helix-editor.com/commands.html#static-commands
+"â" = "flip_selections"
+"ë" = "select_prev_sibling"
+"à" = "select_all_siblings"
+"û" = "earlier"
 
 [keys.normal.space]
 W = ":write"
