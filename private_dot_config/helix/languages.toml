@@ -14,12 +14,14 @@ args = ["127.0.0.1", "6005"]
 
 [[language]]
 name = "html"
-language-servers = ["superhtml", "emmet-language-server"]
+language-servers = ["vscode-html-language-server", "emmet-language-server"]
 formatter = { command = "prettier", args = ["--parser", "html"] }
 
 [[language]]
 name = "css"
 file-types = ["css", "pcss", "postcss"]
+formatter = { command = "prettier", args = ["--parser", "css"] }
+auto-format = true
 
 [[language]]
 name = "gdscript"
@@ -61,4 +63,9 @@ auto-format = true
 [[language]]
 name = "yaml"
 formatter = { command = "prettier", args = ["--parser", "yaml"] }
+auto-format = true
+
+[[language]]
+name = "json"
+formatter = { command = "prettier", args = ["--parser", "json"] }
 auto-format = true
