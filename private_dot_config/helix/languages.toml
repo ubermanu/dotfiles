@@ -69,3 +69,8 @@ auto-format = true
 name = "json"
 formatter = { command = "prettier", args = ["--parser", "json"] }
 auto-format = true
+
+[[language]]
+name = "graphql"
+formatter = { command = "prettier", args = ["--parser", "graphql"] }
+auto-format = true
