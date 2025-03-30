@@ -45,7 +45,6 @@ X = ["extend_line_up", "extend_to_line_bounds"]
 D = ["delete_char_backward"]
 C-e = ["toggle_comments"]
 home = ["goto_first_nonwhitespace"]
-G = ["goto_last_line"]
 "," = "repeat_last_motion"
 "'" = "goto_word"
 
