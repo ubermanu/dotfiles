@@ -7,6 +7,7 @@ $directory\
 $git_branch\
 $git_state\
 $git_status\
+$nix_shell\
 $python
 """
 
@@ -46,4 +47,9 @@ style = "bright-black"
 
 [python]
 format = "([$virtualenv]($style) )"
+style = "bright-black"
+
+[nix_shell]
+symbol = " "
+format = '[$symbol$name]($style) '
 style = "bright-black"

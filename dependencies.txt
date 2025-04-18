@@ -5,6 +5,7 @@ bluez
 bluez-utils
 cantarell-fonts
 dex
+direnv
 d-tracker
 dunst
 exo
@@ -25,6 +26,7 @@ lxappearance
 ly
 maim
 mirage
+nix
 noto-fonts-emoji
 numlockx
 nvidia-settings
