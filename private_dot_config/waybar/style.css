@@ -3,13 +3,13 @@
   border-radius: 0;
   font-family: Sans;
   font-size: 15px;
-  /* box-shadow: none; */
+  box-shadow: none;
   text-shadow: none;
   transition-duration: 0s;
 }
 
 * {
-  font-family: "Symbols Nerd Font", Sans;
+  font-family: "Fira Code", "Symbols Nerd Font", Sans;
 }
 
 window {
@@ -42,6 +42,24 @@ window#waybar.solo {
 
 #workspaces button.urgent {
   color: rgba(238, 46, 36, 1);
+}
+
+#submap {
+  padding: 4px 10px;
+  color: rgba(217, 216, 216, 1);
+  min-width: 40px;
+}
+
+#submap.res,
+#submap.resize {
+  background-color: rgba(51, 204, 255, 0.933);
+  color: rgba(35, 31, 32, 1);
+}
+
+#submap.mov,
+#submap.move {
+  background-color: rgba(255, 102, 0, 0.93);
+  color: rgba(35, 31, 32, 1);
 }
 
 #mode,

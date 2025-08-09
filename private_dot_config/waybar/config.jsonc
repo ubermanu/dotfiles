@@ -4,6 +4,7 @@
   "height": 32,
   "output": "DP-2",
   "modules-left": [
+    "hyprland/submap",
     "hyprland/workspaces",
     "tray"
   ],
@@ -23,6 +24,12 @@
     "format": "{icon}",
     "all-outputs": true,
     "separate-outputs": true
+  },
+  "hyprland/submap": {
+    "format": "<span text_transform='uppercase'>{}</span>",
+    "always-on": true,
+    "default-submap": "nor",
+    "tooltip": false
   },
   "clock": {
     "format": "{:%a %d %b %H:%M}",
