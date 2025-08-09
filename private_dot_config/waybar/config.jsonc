@@ -4,18 +4,19 @@
   "height": 30,
   "output": "DP-2",
   "modules-left": [
-    "hyprland/workspaces"
+    "hyprland/workspaces",
+    "tray"
   ],
   "modules-center": [
     "clock"
   ],
   "modules-right": [
-    "tray",
     "custom/storage",
     "pulseaudio",
     "network"
   ],
   "hyprland/workspaces": {
+    "format": "{icon}",
     "all-outputs": true,
     "separate-outputs": true
   },

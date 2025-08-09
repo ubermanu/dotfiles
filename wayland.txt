@@ -1,8 +1,8 @@
 hyprland
 cliphist
-wofi
 waybar
 grim
 slurp
 hyprlock
 kanshi
+sherlock-launcher-bin
