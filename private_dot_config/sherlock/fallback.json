@@ -36,25 +36,6 @@
     "priority": 100
   },
   {
-    "name": "Clipboard",
-    "alias": "clipboard",
-    "type": "clipboard-execution",
-    "args": {
-      "capabilities": [
-        "url",
-        "colors.hex",
-        "colors.rgb",
-        "colors.hsl",
-        "calc.math",
-        "calc.lengths",
-        "calc.weights",
-        "calc.temperatures"
-      ]
-    },
-    "priority": 1,
-    "home": "Home"
-  },
-  {
     "name": "Emoji Picker",
     "alias": "emoji",
     "type": "emoji_picker",
@@ -88,7 +69,7 @@
         },
         "Lock": {
           "icon": "lucide-lock",
-          "exec": "swaylock",
+          "exec": "hyprlock",
           "search_string": "lock"
         }
       }
