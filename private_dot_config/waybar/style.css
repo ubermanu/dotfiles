@@ -3,7 +3,7 @@
   border-radius: 0;
   font-family: Sans;
   font-size: 15px;
-  box-shadow: none;
+  /* box-shadow: none; */
   text-shadow: none;
   transition-duration: 0s;
 }
@@ -52,11 +52,9 @@ window#waybar.solo {
 #pulseaudio,
 #idle_inhibitor,
 #backlight,
-#custom-storage,
-#custom-spotify,
-#custom-weather,
-#custom-mail {
-  margin: 0px 6px 0px 10px;
+#disk,
+#bluetooth {
+  margin: 0px 7px;
   min-width: 25px;
 }
 
@@ -83,4 +81,8 @@ window#waybar.solo {
 
 #custom-storage.critical {
   color: rgba(238, 46, 36, 1);
+}
+
+#pulseaudio.muted {
+  color: rgba(217, 216, 216, 0.5);
 }

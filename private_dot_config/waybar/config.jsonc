@@ -1,19 +1,23 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 30,
+  "height": 32,
   "output": "DP-2",
   "modules-left": [
     "hyprland/workspaces",
     "tray"
   ],
-  "modules-center": [
-    "clock"
-  ],
+  "modules-center": [],
   "modules-right": [
-    "custom/storage",
+    "cpu",
+    "memory",
+    "disk",
     "pulseaudio",
-    "network"
+    "bluetooth",
+    "backlight",
+    "battery",
+    "network",
+    "clock"
   ],
   "hyprland/workspaces": {
     "format": "{icon}",
@@ -39,8 +43,11 @@
         "󰇨"
       ]
     },
-    "on-click-right": "nm-connection-editor",
-    "tooltip": false
+    "tooltip-format": "{ifname}",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%)",
+    "tooltip-format-ethernet": "{ifname}",
+    "tooltip-format-disconnected": "Disconnected",
+    "on-click-right": "nm-connection-editor"
   },
   "pulseaudio": {
     "format": "{volume}%",
@@ -54,14 +61,10 @@
     },
     "scroll-step": 10,
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-    "on-click-right": "pavucontrol",
-    "tooltip": false
+    "on-click-right": "pavucontrol"
   },
-  "custom/storage": {
-    "format": "{}",
-    "return-type": "json",
-    "interval": 60,
-    "exec": "~/.config/waybar/modules/storage.sh"
+  "bluetooth": {
+    "format-no-controller": ""
   },
   "tray": {
     "icon-size": 18
