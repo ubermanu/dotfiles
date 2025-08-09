@@ -85,7 +85,6 @@ cmd delete ${{
 # use '<delete>' key for either 'trash' or 'delete' command
 map <delete> trash
 map d trash
-# map <delete> delete
 
 # extract the current file with the right command
 # (xkcd link: https://xkcd.com/1168/)
@@ -130,3 +129,7 @@ cmd touch ${{
 
 # map 'n' to create a new file
 map n push :touch<space>
+
+# clear selection after paste
+# https://github.com/gokcehan/lf/wiki/Tips#clear-selected-files-after-copying-and-pasting
+map p :paste; clear

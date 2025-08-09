@@ -6,10 +6,11 @@
   "modules-left": [
     "hyprland/submap",
     "hyprland/workspaces",
-    "tray"
+    "hyprland/window"
   ],
   "modules-center": [],
   "modules-right": [
+    "tray",
     "cpu",
     "memory",
     "disk",
@@ -21,9 +22,8 @@
     "clock"
   ],
   "hyprland/workspaces": {
-    "format": "{icon}",
-    "all-outputs": true,
-    "separate-outputs": true
+    "format": "{}",
+    "all-outputs": true
   },
   "hyprland/submap": {
     "format": "<span text_transform='uppercase'>{}</span>",
@@ -31,8 +31,12 @@
     "default-submap": "nor",
     "tooltip": false
   },
+  "hyprland/window": {
+    "icon": false
+  },
   "clock": {
-    "format": "{:%a %d %b %H:%M}",
+    "interval": 1,
+    "format": "{:%a %d %b %H:%M:%S}",
     "tooltip": false
   },
   "network": {
