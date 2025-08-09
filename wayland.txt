@@ -6,3 +6,4 @@ slurp
 hyprlock
 kanshi
 sherlock-launcher-bin
+hyprpaper
