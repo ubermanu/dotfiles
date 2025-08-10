@@ -29,6 +29,7 @@
     "tag_start": "{keyword}",
     "alias": "gg",
     "type": "web_launcher",
+    "home": "Search",
     "args": {
       "search_engine": "google",
       "icon": "google"
@@ -42,7 +43,7 @@
     "args": {
       "default_skin_tone": "Simpsons"
     },
-    "priority": 4,
+    "priority": 0,
     "home": "Search"
   },
   {
@@ -74,6 +75,7 @@
         }
       }
     },
-    "priority": 5
+    "shortcut": false,
+    "priority": 0
   }
 ]

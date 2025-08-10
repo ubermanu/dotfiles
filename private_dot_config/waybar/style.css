@@ -69,6 +69,7 @@ window {
 #pulseaudio,
 #idle_inhibitor,
 #backlight,
+#language,
 #disk,
 #bluetooth {
   margin: 0px 7px;
