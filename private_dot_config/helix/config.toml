@@ -64,7 +64,6 @@ P = "paste_clipboard_before"
 r = "replace_selections_with_clipboard"
 
 # Remap some ALT based nav commands to CTRL
-C-a = "select_all_siblings"
 C-p = "select_prev_sibling"
 C-n = "select_next_sibling"
 C-i = "select_all_children"
@@ -103,7 +102,6 @@ r = "replace_selections_with_clipboard"
 "S-î" = "select_all_children"
 
 # Remap some ALT based nav commands to CTRL
-C-a = "select_all_siblings"
 C-p = "select_prev_sibling"
 C-n = "select_next_sibling"
 C-i = "select_all_children"
