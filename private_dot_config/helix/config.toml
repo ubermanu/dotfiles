@@ -39,12 +39,12 @@ hidden = false
 
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
-d = ["delete_selection_noyank"]
-c = ["change_selection_noyank"]
+d = "delete_selection_noyank"
+c = "change_selection_noyank"
 X = ["extend_line_up", "extend_to_line_bounds"]
-D = ["delete_char_backward"]
-C-e = ["toggle_comments"]
-home = ["goto_first_nonwhitespace"]
+D = "delete_char_backward"
+C-e = "toggle_comments"
+home = "goto_first_nonwhitespace"
 "," = "repeat_last_motion"
 "'" = "goto_word"
 
@@ -63,6 +63,12 @@ p = "paste_clipboard_after"
 P = "paste_clipboard_before"
 r = "replace_selections_with_clipboard"
 
+# Remap some ALT based nav commands to CTRL
+C-a = "select_all_siblings"
+C-p = "select_prev_sibling"
+C-n = "select_next_sibling"
+C-i = "select_all_children"
+
 # Fix international keyboard keymaps
 # https://github.com/helix-editor/helix/issues/9862
 # https://docs.helix-editor.com/commands.html#static-commands
@@ -71,6 +77,10 @@ r = "replace_selections_with_clipboard"
 "ë" = "select_prev_sibling"
 "à" = "select_all_siblings"
 "û" = "earlier"
+"ê" = "repeat_last_motion"
+"ï" = "shrink_to_line_bounds"
+"î" = "shrink_selection"
+"S-î" = "select_all_children"
 
 [keys.select]
 # Use main clipboard
@@ -82,10 +92,21 @@ r = "replace_selections_with_clipboard"
 # Fix international keyboard keymaps
 # https://github.com/helix-editor/helix/issues/9862
 # https://docs.helix-editor.com/commands.html#static-commands
+"ß" = "split_selection_on_newline"
 "â" = "flip_selections"
 "ë" = "select_prev_sibling"
 "à" = "select_all_siblings"
 "û" = "earlier"
+"ê" = "repeat_last_motion"
+"ï" = "shrink_to_line_bounds"
+"î" = "shrink_selection"
+"S-î" = "select_all_children"
+
+# Remap some ALT based nav commands to CTRL
+C-a = "select_all_siblings"
+C-p = "select_prev_sibling"
+C-n = "select_next_sibling"
+C-i = "select_all_children"
 
 [keys.normal.space]
 W = ":write"
@@ -102,7 +123,7 @@ n = ":new"
 S-del = [":sh gio trash %{buffer_name}", ":bc!"]
 
 [keys.insert]
-C-backspace = ["delete_word_backward"]
-C-del = ["delete_word_forward"]
-C-ret = ["completion"]
-home = ["goto_first_nonwhitespace"]
+C-backspace = "delete_word_backward"
+C-del = "delete_word_forward"
+C-ret = "completion"
+home = "goto_first_nonwhitespace"
