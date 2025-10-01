@@ -55,7 +55,7 @@
         "Shutdown": {
           "icon": "lucide-power",
           "icon_class": "reactive",
-          "exec": "systemctl shutdown",
+          "exec": "systemctl poweroff",
           "search_string": "shutdown"
         },
         "Reboot": {
