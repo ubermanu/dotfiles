@@ -29,31 +29,25 @@ map <enter> open "$f"
 # show the result of execution of previous commands
 map ` !true
 
-# execute current file (must be executable)
-map x $$f
-map X !$f
-
 # dedicated keys for file opener actions
 map o &mimeopen $f
 map O $mimeopen --ask $f
 
-# define a custom 'open' command
-# This command is called when current file is not a directory. You may want to
-# use either file extensions and/or mime types here. Below uses an editor for
-# text files and a file opener for the rest.
-cmd open &{{
-    case $(file --mime-type -Lb $f) in
-        text/*) lf -remote "send $id \$$EDITOR \$fx";;
-        *) for f in $fx; do $OPENER $f > /dev/null 2> /dev/null & done;;
-    esac
+# open the file into zellij when available
+cmd open ${{
+    if [ "$ZELLIJ" = "0" ]; then
+        zellij action go-to-tab 1
+        zellij action write 27
+        zellij action write 58
+        zellij action write-chars "open $fx"
+        zellij action write 13
+    else
+        xdg-open "$fx"
+    fi
 }}
 
 # mkdir command. See wiki if you want it to select created dir
 map a :push %mkdir<space>
-
-# define a custom 'rename' command without prompt for overwrite
-# cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
-# map r push :rename<space>
 
 # Go to the start of the file name on rename
 # https://github.com/gokcehan/lf/wiki/Tips#enhancing-the-rename-command
@@ -129,6 +123,9 @@ cmd touch ${{
 
 # map 'n' to create a new file
 map n push :touch<space>
+
+# map 'x' to cut
+map x cut
 
 # clear selection after paste
 # https://github.com/gokcehan/lf/wiki/Tips#clear-selected-files-after-copying-and-pasting

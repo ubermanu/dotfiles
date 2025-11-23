@@ -1,5 +1,8 @@
 theme = Arthur
 
+# always start at home
+working-directory = home
+
 # fonts
 font-family = "Fira Code"
 font-family-italic = "Iosevka"

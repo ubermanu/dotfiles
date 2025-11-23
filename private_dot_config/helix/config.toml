@@ -47,6 +47,7 @@ C-e = "toggle_comments"
 home = "goto_first_nonwhitespace"
 "," = "repeat_last_motion"
 "'" = "goto_word"
+"C-r" = ":reload-all"
 
 # Move selection
 C-k = [

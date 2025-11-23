@@ -44,6 +44,7 @@ rofi
 rofi-calc
 rofi-emoji
 rofi-power-menu-git
+scooter-bin
 starship
 thunar
 thunar-archive-plugin
@@ -65,6 +66,7 @@ xorg-xinit
 xorg-xinput
 xsel
 xss-lock
+zellij
 zip
 zsh
 zsh-autosuggestions
