@@ -1,28 +1,30 @@
-theme "ao"
+theme "arthur"
+pane_frames false
+show_startup_tips false
 
 layout {
     default_tab_template {
+        children
         pane size=1 borderless=true {
             plugin location="zellij:tab-bar"
         }
-        children
     }
 
     tab name="editor" focus=true {
-        pane command="helix" {
+        pane command="helix" borderless=true {
             args ".";
         }
     }
     tab name="files" {
-        pane command="lf" {
+        pane command="lf" borderless=true {
             args "-command" "set hidden";
         }
     }
     tab name="git" {
-        pane command="lazygit"
+        pane command="lazygit" borderless=true
     }
     tab name="search/replace" {
-        pane command="scooter"
+        pane command="scooter" borderless=true
     }
 }
 
