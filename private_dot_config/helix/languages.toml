@@ -74,3 +74,7 @@ auto-format = true
 name = "graphql"
 formatter = { command = "prettier", args = ["--parser", "graphql"] }
 auto-format = true
+
+[[language]]
+name = "xml"
+formatter = { command = "xmllint", args = ["--format", "-"] }
