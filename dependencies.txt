@@ -25,7 +25,6 @@ luajit
 lxappearance
 ly
 maim
-mirage
 nix
 noto-fonts-emoji
 numlockx
@@ -40,6 +39,7 @@ polybar
 posy-improved-cursors
 progress
 pulseaudio-control
+ristretto
 rofi
 rofi-calc
 rofi-emoji
