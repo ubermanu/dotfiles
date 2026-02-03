@@ -62,7 +62,7 @@
     "on-click-right": "nm-connection-editor"
   },
   "pulseaudio": {
-    "format": "{volume}%",
+    "format": "{icon} {volume}%",
     "format-muted": "MUTED",
     "format-icons": {
       "default": [
