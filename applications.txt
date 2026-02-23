@@ -1,4 +1,5 @@
 bash-language-server
+bruno-bin
 code
 codelldb-bin
 discord
