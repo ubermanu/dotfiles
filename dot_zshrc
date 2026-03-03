@@ -61,6 +61,9 @@ eval "$(starship init zsh)"
 precmd() { precmd() { echo "" } }
 alias clear="precmd() { precmd() { echo } } && clear"
 
+# zoxide
+eval "$(zoxide init zsh)"
+
 # cargo
 export PATH="$HOME/.cargo/bin:$PATH"
 

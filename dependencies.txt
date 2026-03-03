@@ -68,6 +68,7 @@ xsel
 xss-lock
 zellij
 zip
+zoxide
 zsh
 zsh-autosuggestions
 zsh-completions
